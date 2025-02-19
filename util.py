@@ -32,3 +32,8 @@ def is_today(dt: Union[str, datetime.datetime]) -> bool:
             return True
         
     return False
+
+def get_config():
+    with open('config.json', 'r') as f:
+        d = json.load(f)
+    return d
