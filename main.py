@@ -1,15 +1,11 @@
 from dotenv import load_dotenv
 import os
 
-import atexit
 import datetime 
 from telethon.sync import TelegramClient
-from telethon.tl.types import User, Channel, Message
-from telethon import functions, types
 
 from util import get_list_of_chanels, is_today, get_prefix_for_chanels, get_config
 from ml import create_summary
-
 
 async def main():
     await client.start()
